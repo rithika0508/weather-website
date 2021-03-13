@@ -9,8 +9,8 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Cant find the location, Enter right Location', undefined);
         } else {
-            callback (undefined, body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+ ' fahreneit but it feels like '+ body.current.feelslike
-            ,'The humidity is '+body.current.humidity);
+            callback (undefined, body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+ ' fahreneit but it feels like '+ body.current.feelslike+
+            'The humidity is '+body.current.humidity);
             console.log('test');
         }
     })
